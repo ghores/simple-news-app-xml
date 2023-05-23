@@ -13,3 +13,7 @@ Retrofit is a REST Client for Java and Android. Its use is very easy.
 
 
 # Screenshot
+
+<img src="images/newsapp1.png" width="250"/> <img src="images/newsapp2.png" width="250"/>
+
+<img src="images/newsapp3.png" width="250"/> <img src="images/newsapp4.png" width="250"/>
