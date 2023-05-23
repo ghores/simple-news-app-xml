@@ -32,7 +32,7 @@ class NewsAdaptor(
                 description = findViewById(R.id.descTv)
                 dateAndWriter = findViewById(R.id.dateWriterTv)
                 image = findViewById(R.id.imageView)
-                title.setOnClickListener {
+                image.setOnClickListener {
                     val intent = Intent(context, WebPageActivity::class.java)
                     intent.putExtra("url",newsList[adapterPosition].url)
                     context.startActivity(intent)
