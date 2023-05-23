@@ -1,4 +1,4 @@
-package com.example.simplenewsapp
+package com.example.simplenewsapp.activities
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.simplenewsapp.api.Api
+import com.example.simplenewsapp.model.News
+import com.example.simplenewsapp.adaptor.NewsAdaptor
+import com.example.simplenewsapp.R
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

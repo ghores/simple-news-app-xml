@@ -1,4 +1,4 @@
-package com.example.simplenewsapp
+package com.example.simplenewsapp.adaptor
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -10,6 +10,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.simplenewsapp.model.News
+import com.example.simplenewsapp.R
+import com.example.simplenewsapp.activities.WebPageActivity
 
 class NewsAdaptor(
     var newsList: MutableList<News>,
@@ -30,7 +33,7 @@ class NewsAdaptor(
                 dateAndWriter = findViewById(R.id.dateWriterTv)
                 image = findViewById(R.id.imageView)
                 title.setOnClickListener {
-                    val intent = Intent(context,WebPageActivity::class.java)
+                    val intent = Intent(context, WebPageActivity::class.java)
                     intent.putExtra("url",newsList[adapterPosition].url)
                     context.startActivity(intent)
                 }
